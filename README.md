@@ -1,20 +1,14 @@
-# APP Proffy
-    - O app feito a partir dos estudos de ReactNative com aulas da rocketseat na NLW2( Next Level Week)
+# APP para calculos trabalhistas
+    - O app feito a partir dos estudos de ReactNative para realização de calculos recisorios
     - App feito utilizando expo para que as funcionalidade fossem criadas já para Android e IOS
 
-## Para rodar o app 
-    - utilizar comando yarn start
-
-
+## Para rodar o app
+    - Utilizar comando yarn start
+    - Ler o QR code com o aplicativo expo no celular
 
 ### Funcionalidades
 
-- Tela Inicial com total de conexões já realizadas
-- Listagem de professores 
-- Favoritar/Desfavoritar Professor
-- Listagem de favoritos
-- Abertura direta do whatsapp Para contato com o professor
-
-### Ideia do projeto
-- O App proffy tem como objetivo conectar alunos que querem aprender algo novo ou buscar aulas de reforço
-com professores de materias variadas que assim como a ideia do uber , tem algum tempo para ensinar ou prestar um serviço!
+- Tela Inicial com opção de ir para os calculos e ir para pagina sobre nos
+- Formulario para preenchimeto de dados
+- Função de cacular valores da recisão
+- Função para envio por whats app dos dados
