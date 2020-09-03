@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TeacherList from '../pages/TeacherList';
-import Favorites from '../pages/Favorites';
+import Favorites from '../pages/FormToCalc';
 import { Ionicons } from '@expo/vector-icons';
 import { Platform } from 'react-native';
 
@@ -24,11 +24,11 @@ function StudyTabs() {
                     justifyContent: 'center',
                     paddingBottom: Platform.OS === 'ios' ? 20 : 0,
                 },
-                
+
                 safeAreaInsets: {
                     bottom: 0,
                 },
-                
+
                 iconStyle: {
                     flex: 0,
                     width: 20,
@@ -47,9 +47,9 @@ function StudyTabs() {
                 activeTintColor: '#32264d'
             }}
         >
-            <Screen 
-                name="TeacherList" 
-                component={TeacherList} 
+            <Screen
+                name="TeacherList"
+                component={TeacherList}
                 options={{
                     tabBarLabel: 'Calcular',
                     tabBarIcon: ( { color, size, focused }) =>{
