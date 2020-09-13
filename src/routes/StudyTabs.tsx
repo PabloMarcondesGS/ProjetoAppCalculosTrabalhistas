@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import TeacherList from '../pages/TeacherList';
+import TeacherList from '../pages/Questions';
 import Favorites from '../pages/FormToCalc';
 import { Ionicons } from '@expo/vector-icons';
 import { Platform } from 'react-native';

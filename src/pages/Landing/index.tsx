@@ -35,22 +35,21 @@ function Landing() {
     return (
         <View style={styles.container}>
             <Image source={logoCarteiraTrabalho}  style={styles.banner}/>
-        
+
             <Text style={styles.title}>
                 Seja Bem-vindo, {'\n'}
                 <Text style={styles.titleBold}>O que deseja fazer?</Text>
             </Text>
 
             <View style={styles.buttonsConteiner}>
-                <RectButton 
+                <RectButton
                 onPress={handleNavigateToGiveClassesPage}
                 style={[styles.button, styles.buttonPrimary]}>
-                    
-                    {/* <Image source={studyIcon}/> */}
+
                     <Text style={styles.buttonText}>Calcular Recisão</Text>
                 </RectButton>
-            
-                <RectButton  
+
+                <RectButton
                 onPress={handleNavigateToStudyPage}
                 style={[styles.button, styles.buttonSecondary]}>
 
@@ -58,11 +57,6 @@ function Landing() {
                     <Text style={styles.buttonText}>Sobre Nós</Text>
                 </RectButton>
             </View>
-
-            {/* <Text style={styles.totalConnections}>
-                Total de {totalConnections} conexões já realizadas {' '}
-                <Image source={heartIcon} />
-            </Text> */}
         </View>
 
     );
