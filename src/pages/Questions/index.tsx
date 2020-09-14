@@ -211,15 +211,15 @@ function TeacherList() {
               }) => (
                 <View>
                   <Text style={styles.label}>Continua Na empresa?</Text>
-                  {/* <TextInput
+                  <TextInput
                     style={styles.input}
                     // value={subject}
                     onChangeText={handleChange('continue')}
                     value={values.continue}
                     placeholder="Sim/Não"
                     placeholderTextColor="#c1bccc"
-                  /> */}
-                  <View style={styles.backgroundPicker}>
+                  />
+                  {/* <View style={styles.backgroundPicker}>
                     <Picker
                       selectedValue={values.continue}
                       style={{ height: 50 }}
@@ -230,7 +230,7 @@ function TeacherList() {
                       <Picker.Item label="Sim" value="Sim" />
                       <Picker.Item label="Não" value="Não" />
                     </Picker>
-                  </View>
+                  </View> */}
                   <Text style={styles.label}>
                     Tempo de empresa (em meses) ?
                   </Text>
@@ -255,15 +255,15 @@ function TeacherList() {
                   />
 
                   <Text style={styles.label}>Registrado?</Text>
-                  {/* <TextInput
+                  <TextInput
                     style={styles.input}
                     // value={subject}
                     onChangeText={handleChange('registred')}
                     value={values.registred}
                     placeholder="Sim/Não"
                     placeholderTextColor="#c1bccc"
-                  /> */}
-                  <View style={styles.backgroundPicker}>
+                  />
+                  {/* <View style={styles.backgroundPicker}>
                     <Picker
                       selectedValue={values.registred}
                       style={{ height: 50 }}
@@ -274,7 +274,7 @@ function TeacherList() {
                       <Picker.Item label="Sim" value="Sim" />
                       <Picker.Item label="Não" value="Não" />
                     </Picker>
-                  </View>
+                  </View> */}
 
                   <Text style={styles.label}>Cargo Ocupado?</Text>
                   <TextInput
@@ -442,15 +442,15 @@ function TeacherList() {
                   />
 
                   <Text style={styles.label}>Há danos morais?</Text>
-                  {/* <TextInput
+                  <TextInput
                     style={styles.input}
                     // value={subject}
                     onChangeText={handleChange('moral_damages')}
                     value={values.moral_damages.toString()}
                     placeholder="Sim/Não"
                     placeholderTextColor="#c1bccc"
-                  /> */}
-                  <View style={styles.backgroundPicker}>
+                  />
+                  {/* <View style={styles.backgroundPicker}>
                     <Picker
                       selectedValue={values.moral_damages}
                       style={{ height: 50 }}
@@ -461,7 +461,7 @@ function TeacherList() {
                       <Picker.Item label="Sim" value="Sim" />
                       <Picker.Item label="Não" value="Não" />
                     </Picker>
-                  </View>
+                  </View> */}
 
                   <Text style={styles.label}>Houve acidente de trabalho</Text>
                   {/* <TextInput
@@ -568,15 +568,15 @@ function TeacherList() {
                   />
 
                   <Text style={styles.label}>Divergencias de pagamentos?</Text>
-                  {/* <TextInput
+                  <TextInput
                     style={styles.input}
                     // value={subject}
                     onChangeText={handleChange('payment_differences')}
                     value={values.payment_differences.toString()}
                     placeholder="ex: Sim/Não"
                     placeholderTextColor="#c1bccc"
-                  /> */}
-                  <View style={styles.backgroundPicker}>
+                  />
+                  {/* <View style={styles.backgroundPicker}>
                     <Picker
                       selectedValue={values.payment_differences}
                       style={{ height: 50 }}
@@ -587,7 +587,7 @@ function TeacherList() {
                       <Picker.Item label="Sim" value="Sim" />
                       <Picker.Item label="Não" value="Não" />
                     </Picker>
-                  </View>
+                  </View> */}
                   <View style={{ marginBottom: 120 }}>
                     <TouchableOpacity
                       onPress={handleSubmit as any}
