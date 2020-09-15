@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { View, ScrollView, Text, TextInput, Picker } from 'react-native';
+import { View, ScrollView, Text, TextInput, Share, Linking } from 'react-native';
 
 import styles from './styles';
 import PageHeader from '../../components/PageHeader';
@@ -226,6 +226,11 @@ function TeacherList() {
     setIsFilterVisible(false);
     //   setTeachers(response.data);
   }
+
+  const onOpenWhatsappToShare = async () => {
+    const whatsapp = `whatsapp://send?text=${JSON.stringify(balance)}`;
+    return Linking.openURL(whatsapp);
+  };
   
   return (
     <View style={styles.container}>
@@ -429,9 +434,14 @@ function TeacherList() {
           (
             <>
             { balance && (
+              <>
               <View>
               <Text>{JSON.stringify(balance, null, 2)}</Text>
               </View>
+              <RectButton onPress={onOpenWhatsappToShare} style={[styles.submitButton, {marginTop: 30}]}>
+                <Text style={styles.submitButtonText}>Compartilhar no whatsapp</Text>
+              </RectButton>
+            </>
               )
             }
             </>
