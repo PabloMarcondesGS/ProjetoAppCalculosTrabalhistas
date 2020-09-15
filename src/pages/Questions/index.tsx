@@ -74,7 +74,7 @@ const schema = Yup.object().shape({
   paymentsDivergency: Yup.string().oneOf(["Sim", "Não"], "Escolha uma opção").nullable(),
 })
 
-function TeacherList() {
+function QuestionsList() {
   const [ isFilterVisible, setIsFilterVisible ] = useState(false);
   const {control, handleSubmit, errors, getValues, watch} = useForm<FormDataProps>({
     resolver: yupResolver(schema),
@@ -171,7 +171,7 @@ function TeacherList() {
     }
 
     const response = {
-      salario_proporcional:proporcionalSalary,
+      salario_proporcional: Math.round(proporcionalSalary),
       totalPendentHolidays,
       totalPendentHolidaysProporcional,
       proporcional13,
@@ -179,6 +179,8 @@ function TeacherList() {
       totalRecision: balance,
       unemploymentInsurancePacel: unemploymentInsurance
     };
+
+    // console.log("O valor do salario a ser recebido e de $ " + proporcionalSalary );
 
     return response;
   }
@@ -411,10 +413,12 @@ function TeacherList() {
             { balance && (
               <>
               <View>
-              <Text>{JSON.stringify(balance, null, 2)}</Text>
+              {/* <Text>{JSON.stringify(balance, null, 2)}</Text> */}
+              <Text>O valor do salario a ser recebido e de $ {balance.salario_proporcional}</Text>
+              {/* <Text>Para um resultado mais detalhado envie por whatsapp</Text> */}
               </View>
               <RectButton onPress={onOpenWhatsappToShare} style={[styles.submitButton, {marginTop: 30}]}>
-                <Text style={styles.submitButtonText}>Compartilhar no whatsapp</Text>
+                <Text style={styles.submitButtonText}>Detalhes por whatsapp</Text>
               </RectButton>
             </>
               )
@@ -428,4 +432,4 @@ function TeacherList() {
           )
         }
 
-        export default TeacherList;
+        export default QuestionsList;
