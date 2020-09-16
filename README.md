@@ -12,3 +12,7 @@
 - Formulario para preenchimeto de dados
 - Função de cacular valores da recisão
 - Função para envio por whats app dos dados
+
+####
+- Para trocar logo ou pagina de carregamento ir em assets > icon.png
+- Cada pagina possui uma estilização propria, portando alteração de cores devem ser feitas em todas.

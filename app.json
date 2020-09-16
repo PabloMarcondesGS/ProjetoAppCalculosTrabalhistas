@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "genaroAdvocacia",
+    "slug": "genaroAdvocacia",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/genaro.jpeg",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -17,7 +17,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pabloMarcondes.genaroadvocacia"
+    },
+    "android": {
+        "package": "com.pabloMarcondes.genaroadvocacia",
+        "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
