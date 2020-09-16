@@ -30,6 +30,7 @@ const Select: React.FC<Props> = ({label, options, defaultValue = null, error, pl
             placeholder={placeholder}
             items={options}
             onValueChange={value => onChange(value)}
+            useNativeAndroidPickerStyle={false}
             style={pickerSelectStyles(!!error)}
             value={value}
             doneText="Pronto"
